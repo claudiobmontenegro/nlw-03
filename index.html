@@ -1,36 +1,45 @@
 <!DOCTYPE html>
 <html lang="pt_BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Happy</title>
+    <link rel="icon" href="./public/images/logo-icon.png" />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;1,800&display=swap" rel="stylesheet">
 
-  <link rel="icon" href="./public/images/logo-icon.png">
+    <link rel="stylesheet" href="public/css/main.css" />
+    <link rel="stylesheet" href="public/css/animations.css" />
+    <link rel="stylesheet" href="public/css/page-landing.css" />
 
-</head>
+  </head>
 
-<body>
-  <header>
-    <img src="./public/images/logo.svg" alt="Logomarca de Happy" />
+  <body id="body">
+    <div id="page-landing">
+      <div id="container">
+        <header>
+          <img 
+          class="animate-up"
+          id="logo" 
+          src="./public/images/logo.svg" 
+          alt="Logomarca de Happy" />
+          <div class="location animate-up">
+            <strong>João Pessoa</strong>
+            <p>Paraíba</p>
+          </div>
+        </header>
 
-    <div>
-      <strong>João Pessoa</strong>
-      <p>Paraíba</p>
+        <main>
+          <h1 class="animate-up">Leve felicidade para o mundo</h1>
+
+          <section class="visit">
+            <p class="animate-up">Visite orfanatos e mude o dia de muitas crianças.</p>
+            <a class="animate-up" href="#" title="Visite orfanatos"
+              ><img src="./public/images/arrow.svg"
+            /></a>
+          </section>
+        </main>
+      </div>
     </div>
-
-  </header>
-</body>
-
-
+  </body>
 </html>
-
-<!--
-    HTML
-    Hypertext
-        hipertexto,links
-    MARKUP
-        marcação <tags>
-    Language
-        linguagem
--->
