@@ -1,60 +1,111 @@
 #page-landing {
-    background: linear-gradient(329.54deg, #29b6d1 0%, #00c7c7 100%);
-    text-align: center;
-    min-height: 100vh;
+  background: linear-gradient(329.54deg, #29b6d1 0%, #00c7c7 100%);
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+}
+
+#container {
+  margin: auto;
+  width: min(90%, 112rem);
+}
+
+.location,
+h1,
+.visit p {
+  /* .xxxx entra no class e procura no caso pelo p*/
+  height: 16vh;
+}
+
+.visit a {
+  width: 8rem;
+  height: 8rem;
+  background-color: #ffd666;
+
+  border: none;
+  border-radius: 3rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: auto;
+
+  transition: background 200ms;
+
+  animation-delay: 250ms;
+}
+
+.visit a:hover {
+  background: #96feff;
+}
+
+#logo {
+  animation-delay: 50ms;
+}
+
+#location {
+  animation-delay: 100ms;
+}
+
+main h1 {
+  font-size: clamp(4rem, 8vw, 8.4rem); /*Faz o texto mexer com um limite */
+  animation-delay: 50ms;
+}
+
+.visit p {
+  animation-delay: 200ms;
+}
+
+/* Desktop Version */
+
+@media (min-width: 760px) {
+
+  #container{
+    padding: 5rem 2rem;
+    /*shorthand background: image repeat positon / size */
+    background: url("../images/bg.svg") no-repeat 80% / clamp(30rem, 54vw, 56rem); 
+  }
+
+  header {
     display: flex;
-  }
-  
-  #container {
-    margin: auto;
-    width: 90%;
-  }
-  
+    align-items: center;
+    justify-content: space-between;
+  } 
+
   .location,
   h1,
   .visit p {
-    /* .xxxx entra no class e procura no caso pelo p*/
-    height: 16vh;
+    height: initial;
+    text-align: initial;
   }
-  
-  .visit a {
-    width: 8rem;
-    height: 8rem;
-    background-color: #ffd666;
-  
-    border: none;
-    border-radius: 3rem;
-  
+
+  .location {
+    text-align: right;
+    font-size: 2.4rem;
+    line-height: 1.5;
+  }
+
+  main h1 {
+    font-weight: bold;
+    line-height: 0.88;
+    margin: clamp(10%, 9vh, 12%) 0 4rem;
+    width: min(300px, 80%);
+  }
+
+  .visit{
     display: flex;
     align-items: center;
-    justify-content: center;
-  
-    margin: auto;
-
-    transition: background 200ms;
+    justify-content: space-between;
   }
 
-  .visit a:hover {
-      background: #96feff;
+  .visit p { 
+    font-size: 2.4rem;
+    line-height: 1.5;
+    width: clamp(20rem, 20vw, 30rem);
   }
-  
-#logo{
-    animation-delay: 50ms;
-}
 
-#location{
-    animation-delay: 100ms;
+  .visit a{
+    margin:initial;
+  }
 }
-
-#main h1{
-    animation-delay: 50ms;
-}
-
-.visit p{
-    animation-delay:200ms;
-}
-
-.visit a{
-    animation-delay:250ms;
-}
-  
